@@ -18,6 +18,12 @@
     <ClCompile Include="WC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenMe.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TakeMultiScreenShot.h">
@@ -39,6 +45,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="dirent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemActions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RunOnStartup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -10,11 +10,35 @@ using namespace std;
 
 int main()
 {
-    printf("Running WC v1.0");
-    TakeScreenshot();
+    printf("\t---------------------------------------------\n");
+    printf("\t\t\tRunning WC v1.0\n");
+    printf("\t---------------------------------------------\n");
+    //TakeScreenshot();
     //SetBackgroundFromURL("http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTROLLYosETNJ2leQ8C5uIj4bsCdEC6GQ2XrCJGkCowkV5FDuDXu4ySmmXE2sRdUHhRD7Y8R3e3R0Cg8oTPIuE");
-    GetExternalIP();
-    StartLogger();
+    //GetExternalIP();
+    //StartLogger();
+
+	ShowWindow(GetConsoleWindow(), SW_SHOW);
+
+	std::cout << GetDesktopDirectory() << std::endl;
+
+	//ListDirContents("C:\\Users\\tomlo\\Pictures\\fpdf");
+	//
+	//std::string myText;
+	//
+	//// Read from the text file
+	//std::ifstream MyReadFile("C:\\Users\\tomlo\\Pictures\\fpdf\\install.txt");
+	//// Use a while loop together with the getline() function to read the file line by line
+	//while (getline(MyReadFile, myText)) {
+	//	// Output the text from the file
+	//	std::cout << myText;
+	//}
+	//if (ControlledFolderAccessEnabled == 0) {
+	//	std::ofstream outfile;
+	//	outfile.open("C:\\Users\\tomlo\\Pictures\\fpdf\\install.txt", std::ios_base::app); // append instead of overwrite
+	//	outfile << "Data";
+	//}
+
     return 0;
 }
 

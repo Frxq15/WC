@@ -67,6 +67,8 @@ std::string GetExternalIP() {
     return address;
 }
 
+//used to check if controlled folder access is enabled
+//DWORD ControlledFolderAccessEnabled = IsControlledFolderAccess();
 DWORD IsControlledFolderAccess() {
     DWORD val;
     DWORD dataSize = sizeof(val);
@@ -91,4 +93,19 @@ void ListDirContents(std::string dir) {
         }
         closedir(dr); //close all directory
     }
+}
+
+std::string GetDesktopDirectory()
+{
+    char* buf = nullptr;
+size_t sz = 0;
+
+    errno_t p = _dupenv_s(&buf, &sz, "USERPROFILE");
+    if( p )
+        std::cout << p << '\n';
+    else
+        std::cout << "USERPROFILE not found\n";
+    std::cin.get();
+
+    return "";
 }
